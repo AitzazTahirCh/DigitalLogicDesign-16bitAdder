@@ -1,0 +1,135 @@
+Question # 01:
+
+
+Consider the following declarations and answer the question given below:
+
+class Vehicle
+
+{
+
+private:
+
+int wheels;
+
+protected :
+
+int passenger:
+
+public :
+
+void inputdata(int, int);
+
+void outputdata();
+
+};
+
+
+class Heavyvehicle : protected Vehicle
+
+{
+
+int diesel_petrol;
+
+protected :
+
+int load;
+
+public:
+
+void readdata(int, int);
+
+void writedata();
+
+};
+
+
+class Bus : private Heavyvehicle
+
+{
+
+char make[20];
+
+public :
+
+void fetchdata(char);
+
+void displaydata();
+
+};
+
+
+(i) Name the base class and derived class of the class Heavyvehicle.
+(ii) Name the data member(s) that can be accessed from function displaydata().
+(iii) Name the data member's that can be accessed by an object of Bus class.
+(iv) Is the member function outputdata() accessible to the objects of Heavyvehicle class.
+
+
+
+
+Question # 02:
+
+Wheels and Cars
+
+A Car is composed of four Wheel thingies. If a car is moving, all its wheels are moving (if nothing else has gone wrong).
+
+2.1 Wheels for Cars
+
+Let’s first do wheels!
+
+1. You need to define a Wheel class. At the moment, this class should have just a single variable state of type
+
+string. Make sure this variable is hidden from those outside the class!
+
+2. Now, within this class, define a public function with the following declaration:
+
+void set_wheel_state(string s); This function should take set the state of the wheel to the value passed in as s.
+
+3. Write another function in this class with the following declaration:
+
+string get_wheel_state() This should simply return the state of the wheel. After this, you should be able to run Part - 3 of the main function in the starter file.
+
+2.2 Cars on Wheels
+
+Once we have a Wheel class, we can use it within our Car class.
+
+1. Define a new class Car. This should have an array of wheels – the size of the array should be 4 since we have
+
+only four wheels. Make sure this array is not visible from outside the class.
+
+2. Next, write a function set_car_to_moving within this class. This function should set the states of all four
+
+wheels to "Turning". That’s it!
+
+3. Write another function set_car_to_stopped same as above except the state of all four wheels should be set
+
+to "Stopped".
+
+4. Finally, write a function print_car_wheels_state in this class which outputs the state of all four wheels
+
+in the following format:
+
+Car state: - Wheel 0 is Stopped - Wheel 1 is Stopped - Wheel 2 is Stopped - Wheel 3 is Stopped
+
+
+Of course, if the car is moving, all output lines should have the word Turning there. Make sure you use the get_wheel_state function of the wheel you defined earlier for this. After this, you should be able to run Part - 4 of the main function in the starter file.
+
+
+Question # 03:
+
+Write three derived classes inheriting functionality of base class person (should have a member function that ask to enter name and age) and
+ with added unique features of student, and employee, and functionality to assign, change and delete records of student and employee.
+
+And make one member function for printing address of the objects of classes (base and derived) using this pointer.
+
+Create two objects of base class and derived classes each and print the addresses of individual objects.
+
+Using calculator, calculate the address space occupied by each object and verify this with address spaces printed by the program.
+
+Question # 04:
+
+Write base class that ask the user to enter a complex number and derived class adds the complex number of its own with the base.
+
+Finally make third class that is friend of derived and calculate the difference of base complex number and its own complex number.
+
+Make a Zip File that contains the source codes for the above programs and a word file that contains a detailed report of the given assignment,
+ source codes and screenshots of the console window.  The name of the zip file should be Name-Roll of each student.  
